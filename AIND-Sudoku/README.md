@@ -9,10 +9,10 @@ rules of the game. One of the constraints is when two squares of a unit (i.e. a 
 possible values that can be assigned to the squares, those values may not be assigned to the rest of the squares in the
 unit. We call such pairs of squares Naked Twins. So the Naked Twins elimination technique works as follows:
 
-  1. We pick a unit and look for naked twins in the unit. Please note, there can be more than one pair of naked twins
-     in the unit.
-  2. If we find one of more pairs of naked twins, we loop over the rest of the non-filled squares in the unit and
-     remove the naked twins values from the list of possible values of the squares.
+  * We pick a unit and look for naked twins in the unit. Please note, there can be more than one pair of naked twins
+  in the unit.
+  * If we find one of more pairs of naked twins, we loop over the rest of the non-filled squares in the unit and
+  remove the naked twins values from the list of possible values of the squares.
 
 Reducing the number of options results in assigning values to some of the unit's squares (the ones that had exactly 3
 possible values before) or it could open up possibilities for further reducing when we enforce the constraints
